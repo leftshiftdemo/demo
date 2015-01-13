@@ -25,7 +25,6 @@ def uppercase():
     textfile_url = request.GET.get('URL', default=None)
 
     # Execute WebService specific task
-    # here, converting a string to upper-casing
     if plain_text is not None:
         return json.dumps(
             {'input' : plain_text, 
