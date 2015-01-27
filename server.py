@@ -35,7 +35,7 @@ def uppercase():
     elif textfile_url is not None:
         textfile = urlopen(textfile_url).read()
         return json.dumps(
-            {'input' : textfile,
+            {
              'output': '\n'.join([line.upper() for line in textfile.split('\n')]) 
              },
             indent=4)
