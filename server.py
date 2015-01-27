@@ -27,7 +27,7 @@ def uppercase():
     # Execute WebService specific task
     if plain_text is not None:
         return json.dumps(
-            {'input' : plain_text, 
+            { 
              'result': plain_text.upper()
              },
             indent=4)
